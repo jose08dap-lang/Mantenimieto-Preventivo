@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mantenimiento Preventivo | Perfil Wix-Style</title>
+    <style>
+        /* Estilos Globales inspirados en Wix */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f6f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Barra de Navegación Estilo Wix */
+        header {
+            background-color: #ffffff;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 24px;
+            color: #111;
+            letter-spacing: 1px;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: #0099ff;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            font-size: 15px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #0099ff;
+        }
+
+        /* Sección Hero */
+        .hero {
+            background: linear-gradient(135deg, #0099ff 0%, #0066cc 100%);
+            color: white;
+            padding: 160px 20px 100px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        /* Contenedor Principal */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        /* Estilo de las Secciones */
+        .section {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 50px;
+            margin-bottom: 60px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+            border-top: 5px solid #0099ff;
+            scroll-margin-top: 100px;
+        }
+
+        .section h2 {
+            font-size: 32px;
+            color: #111;
+            margin-bottom: 15px;
+        }
+
+        .section h3 {
+            font-size: 20px;
+            color: #0066cc;
+            margin: 20px 0 10px 0;
+        }
+
+        .section p {
+            color: #666;
+            margin-bottom: 25px;
+            font-size: 16px;
+        }
+
+        /* Cuadrícula */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: center;
+        }
+
+        /* Contenedor Adaptable para Video Horizontal Estable (Evita Error 153 local) */
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* Relación de aspecto 16:9 estándar */
+            height: 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            background-color: #000;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Estilo para tu Imagen Subida (Sección Equipo) */
+        .team-image-container {
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            border: 4px solid #fff;
+        }
+
+        .team-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Contenedores de Imágenes Genéricas */
+        .image-container {
+            width: 100%;
+            height: 300px;
+            background-color: #eaecef;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #ccc;
+            position: relative;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .image-placeholder-text {
+            position: absolute;
+            text-align: center;
+            color: #777;
+            font-size: 14px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 6px;
+            border: 1px solid #ddd;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            .nav-container {
+                flex-direction: column;
+                gap: 15px;
+                padding: 15px;
+            }
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+            .hero {
+                padding-top: 200px;
+            }
+        }
+
+        /* Pie de Página */
+        footer {
+            background-color: #111;
+            color: #888;
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">PC<span>Clean</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#equipo">Nuestro Equipo</a></li>
+                    <li><a href="#tutorial">Video Tutorial</a></li>
+                    <li><a href="#hardware">Limpieza de Hardware</a></li>
+                    <li><a href="#software">Optimización de Software</a></li>
+                    <li><a href="#seguridad">Seguridad y Backups</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="inicio">
+        <h1>Mantenimiento Preventivo</h1>
+        <p>Alarga la vida útil de tu computador, optimiza su rendimiento y evita fallas de manera profesional.</p>
+    </section>
+
+    <div class="container">
+
+        <section class="section" id="equipo">
+            <div class="grid">
+                <div>
+                    <h2>Nuestro Equipo en Acción</h2>
+                    <p>Detrás de todo buen soporte técnico hay un equipo comprometido con el aprendizaje y el desarrollo tecnológico.</p>
+                    <p>Aquí nos encontramos en pleno proceso de diagnóstico y mantenimiento de hardware, aplicando de forma práctica las mejores directrices para conservar el rendimiento óptimo de los equipos de cómputo.</p>
+                    <h3>Misión:</h3>
+                    <p>Promover la educación digital, la innovación tecnológica y el cuidado responsable de nuestras herramientas de trabajo del día a día.</p>
+                </div>
+                <div>
+                    <div class="team-image-container">
+                        <img src="grupo-mantenimiento.png" alt="Equipo de mantenimiento preventivo de PC">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="tutorial">
+            <div class="grid">
+                <div>
+                    <h2>Video Tutorial</h2>
+                    <p>¡Aprende visualmente cómo llevar a cabo una rutina de mantenimiento eficiente! En este video de YouTube te mostramos los pasos fundamentales que no debes pasar por alto.</p>
+                    <h3>¿Por qué ver este video?</h3>
+                    <p>Observar los procedimientos te ayudará a perder el miedo y a evitar errores costosos, como dañar conectores delicados o aplicar productos incorrectos.</p>
+                </div>
+                <div>
+                    <div class="video-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/H2qZ0tG0_Zg" 
+                            title="Video Tutorial Mantenimiento" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="hardware">
+            <div class="grid">
+                <div>
+                    <h2>01. Limpieza de Hardware</h2>
+                    <p>El polvo es el peor enemigo de los componentes internos. Acumular suciedad obstruye los ventiladores, lo que provoca sobrecalentamiento y reduce drásticamente el rendimiento del procesador.</p>
+                    
+                    <h3>Pasos Fundamentales:</h3>
+                    <ul>
+                        <li><strong>Soplado y aspirado:</strong> Uso de aire comprimido para remover el polvo de ranuras, fuentes de poder y ventiladores.</li>
+                        <li><strong>Cambio de pasta térmica:</strong> Renovación de la pasta del procesador cada 12 a 18 meses para asegurar una transferencia de calor óptima.</li>
+                        <li><strong>Limpieza de contactos:</strong> Aplicación de alcohol isopropílico en los pines de la memoria RAM y tarjetas de expansión.</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1591405351990-4726e331f141?auto=format&fit=crop&w=600&q=80" alt="Limpieza de hardware y polvo interno del PC">
+                        <div class="image-placeholder-text">
+                            <strong>Sugerencia de Imagen:</strong><br>Limpieza interna de un PC con aire comprimido o cambio de pasta térmica.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="software">
+            <div class="grid">
+                <div>
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1618401471353-b98aedd07871?auto=format&fit=crop&w=600&q=80" alt="Optimización del sistema operativo y software">
+                        <div class="image-placeholder-text">
+                            <strong>Sugerencia de Imagen:</strong><br>Pantalla de desfragmentación, administrador de tareas o limpieza de disco.
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2>02. Optimización de Software</h2>
+                    <p>Un sistema operativo saturado de archivos basura y procesos en segundo plano ralentiza cualquier computador, sin importar qué tan potente sea su hardware.</p>
+                    
+                    <h3>Acciones Clave:</h3>
+                    <ul>
+                        <li><strong>Eliminación de archivos temporales:</strong> Limpieza de la caché del sistema y del navegador de internet.</li>
+                        <li><strong>Desfragmentación / Optimización:</strong> Organización de datos en discos HDD o ejecución del comando TRIM en unidades SSD.</li>
+                        <li><strong>Control de aplicaciones de inicio:</strong> Desactivar programas innecesarios que se ejecutan automáticamente al encender el equipo.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="seguridad">
+            <div class="grid">
+                <div>
+                    <h2>03. Seguridad y Backups</h2>
+                    <p>El mantenimiento preventivo también implica proteger tu información contra virus, malware o fallas repentinas del disco duro que puedan causar pérdidas de datos irreparables.</p>
+                    
+                    <h3>Protocolo de Prevención:</h3>
+                    <ul>
+                        <li><strong>Análisis antivirus profundo:</strong> Programación de escaneos semanales para detectar amenazas silenciosas.</li>
+                        <li><strong>Actualizaciones del Sistema:</strong> Mantener al día los parches de seguridad de Windows/macOS y los controladores (drivers).</li>
+                        <li><strong>Copias de Seguridad (Backups):</strong> Configurar respaldos automáticos en la nube o en discos externos usando la regla de respaldo 3-2-1.</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=80" alt="Seguridad informática y copias de seguridad">
+                        <div class="image-placeholder-text">
+                            <strong>Sugerencia de Imagen:</strong><br>Disco duro externo para respaldos o interfaz de un software antivirus de confianza.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 PC Clean. Creado con fines educativos estilo Wix.</p>
+        <p>Optimiza, protege y acelera tu equipo.</p>
+    </footer>
+
+</body>
+</html>
