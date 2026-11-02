@@ -11,23 +11,19 @@
             padding: 0;
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            
         }
 
-html {
-        scroll-behavior: smooth;
-        scroll-padding-top: 130px;
-    }
-        .section {
-    padding-top: 220px;
-    margin-top: -180px;
-}
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 110px;
+        }
 
-body {
-    background-color: #f5f6f8;
-    color: #333;
-    line-height: 1.6;
-}
+        body {
+            background-color: #f5f6f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
         /* Barra de Navegación Estilo Wix */
         header {
             background-color: #ffffff;
@@ -114,7 +110,6 @@ body {
             margin-bottom: 60px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.03);
             border-top: 5px solid #0099ff;
-            scroll-margin-top: 100px;
         }
 
         .section h2 {
@@ -143,11 +138,11 @@ body {
             align-items: center;
         }
 
-        /* Contenedor Adaptable para Video Horizontal Estable (Evita Error 153 local) */
+        /* Contenedor Adaptable para Video Horizontal Estable */
         .video-wrapper {
             position: relative;
             width: 100%;
-            padding-bottom: 56.25%; /* Relación de aspecto 16:9 estándar */
+            padding-bottom: 56.25%;
             height: 0;
             border-radius: 12px;
             overflow: hidden;
@@ -197,17 +192,6 @@ body {
             width: 100%;
             height: 100%;
             object-fit: cover;
-        }
-
-        .image-placeholder-text {
-            position: absolute;
-            text-align: center;
-            color: #777;
-            font-size: 14px;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 6px;
-            border: 1px solid #ddd;
         }
 
         @media (max-width: 768px) {
@@ -292,32 +276,31 @@ body {
                 </div>
                 <div>
                     <div class="video-wrapper">
-                        
-  <iframe width="100%" height="400" src="https://www.youtube.com/embed/ka3uO53ZEk4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+                        <iframe width="100%" height="400" src="https://www.youtube.com/embed/ka3uO53ZEk4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
         </section>
 
-    <section class="section" id="implementos">
-    <h2>Implementos necesarios para un mantenimiento</h2>
-    <p>Para realizar un mantenimiento preventivo exitoso y seguro, se requieren las siguientes herramientas e implementos básicos:</p>
-    <div class="grid" style="align-items: center; margin-top: 1.5rem;">
-        <div>
-            <ul style="line-height: 1.6; padding-left: 1.2rem;">
-                <li><strong>Aire comprimido:</strong> Ideal para remover el polvo acumulado en lugares difíciles sin dañar los componentes.</li>
-                <li><strong>Alcohol isopropílico:</strong> Utilizado para limpiar contactos electrónicos y eliminar residuos de pasta térmica sin dejar humedad.</li>
-                <li><strong>Pasta térmica de calidad:</strong> Esencial para garantizar una correcta transferencia de calor entre el procesador y el disipador.</li>
-                <li><strong>Destornilladores de precisión:</strong> Herramientas magnéticas de estrella y plana para abrir el chasis y desensamblar piezas con seguridad.</li>
-                <li><strong>Brocha antiestática o suave:</strong> Para retirar el polvo superficial de las tarjetas y circuitos sin generar estática.</li>
-                <li><strong>Pulsera antiestática:</strong> Para evitar descargas de electricidad estática que dañen los componentes internos.</li>
-                <li><strong>Guantes y tapabocas:</strong> Para protegerte del polvo y evitar transferir grasa o sudor a las piezas.</li>
-                <li><strong>Gafas de seguridad:</strong> Para proteger los ojos de partículas de polvo o residuos al usar aire comprimido.</li>
-            </ul>
-        </div>
-    </div>
-</section>       
+        <section class="section" id="implementos">
+            <h2>Implementos necesarios para un mantenimiento</h2>
+            <p>Para realizar un mantenimiento preventivo exitoso y seguro, se requieren las siguientes herramientas e implementos básicos:</p>
+            <div class="grid" style="align-items: center; margin-top: 1.5rem;">
+                <div>
+                    <ul style="line-height: 1.6; padding-left: 1.2rem;">
+                        <li><strong>Aire comprimido:</strong> Ideal para remover el polvo acumulado en lugares difíciles sin dañar los componentes.</li>
+                        <li><strong>Alcohol isopropílico:</strong> Utilizado para limpiar contactos electrónicos y eliminar residuos de pasta térmica sin dejar humedad.</li>
+                        <li><strong>Pasta térmica de calidad:</strong> Esencial para garantizar una correcta transferencia de calor entre el procesador y el disipador.</li>
+                        <li><strong>Destornilladores de precisión:</strong> Herramientas magnéticas de estrella y plana para abrir el chasis y desensamblar piezas con seguridad.</li>
+                        <li><strong>Brocha antiestática o suave:</strong> Para retirar el polvo superficial de las tarjetas y circuitos sin generar estática.</li>
+                        <li><strong>Pulsera antiestática:</strong> Para evitar descargas de electricidad estática que dañen los componentes internos.</li>
+                        <li><strong>Guantes y tapabocas:</strong> Para protegerte del polvo y evitar transferir grasa o sudor a las piezas.</li>
+                        <li><strong>Gafas de seguridad:</strong> Para proteger los ojos de partículas de polvo o residuos al usar aire comprimido.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>       
+
         <section class="section" id="hardware">
             <div class="grid">
                 <div>
@@ -333,106 +316,103 @@ body {
                 </div>
                 <div>
                    <div class="image-container">
-    <img src="Limpiar-PC-Limpieza.jpg" alt="Limpieza de hardware">
-</div>
-                          
-                    </div>
+                       <img src="Limpiar-PC-Limpieza.jpg" alt="Limpieza de hardware">
+                   </div>
                 </div>
             </div>
         </section>
 
         <section class="section" id="software">
-    <div class="grid">
-        <div>
-            <h2>02. Optimización de Software</h2>
-            <p>Un sistema operativo saturado de archivos basura y procesos en segundo plano ralentiza cualquier computador, sin importar qué tan potente sea su hardware.</p>
-            
-            <h3>Acciones Clave:</h3>
-            <ul>
-                <li><strong>Eliminación de archivos temporales:</strong> Limpieza de la caché del sistema y del navegador de internet.</li>
-                <li><strong>Desfragmentación / Optimización:</strong> Organización de datos en discos HDD o ejecución del comando TRIM en unidades SSD.</li>
-                <li><strong>Control de aplicaciones de inicio:</strong> Desactivar programas innecesarios que se ejecutan automáticamente al encender el equipo.</li>
-            </ul>
-        </div>
-        
-        <div class="image-container">
-            <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Optimización de software">
-        </div>
-    </div>
-</section>
-       <!-- Sección: Seguridad y Backups -->
-<section class="section" id="seguridad" style="padding-top: 130px; margin-top: -130px;">
-  <h2>03. Seguridad y Backups</h2>
-  <p>El mantenimiento preventivo también implica proteger tu información contra virus, malware o fallas repentinas del disco duro que puedan causar pérdidas de datos irreparables.</p>
+            <div class="grid">
+                <div>
+                    <h2>02. Optimización de Software</h2>
+                    <p>Un sistema operativo saturado de archivos basura y procesos en segundo plano ralentiza cualquier computador, sin importar qué tan potente sea su hardware.</p>
+                    
+                    <h3>Acciones Clave:</h3>
+                    <ul>
+                        <li><strong>Eliminación de archivos temporales:</strong> Limpieza de la caché del sistema y del navegador de internet.</li>
+                        <li><strong>Desfragmentación / Optimización:</strong> Organización de datos en discos HDD o ejecución del comando TRIM en unidades SSD.</li>
+                        <li><strong>Control de aplicaciones de inicio:</strong> Desactivar programas innecesarios que se ejecutan automáticamente al encender el equipo.</li>
+                    </ul>
+                </div>
+                
+                <div class="image-container">
+                    <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Optimización de software">
+                </div>
+            </div>
+        </section>
 
-  <div class="grid" style="align-items: center; margin-top: 1.5rem;">
-    <div>
-      <h3 style="color: #2b6cb0; margin-bottom: 0.8rem;">Protocolo de Prevención:</h3>
-      <ul style="line-height: 1.6; padding-left: 1.2rem;">
-        <li><strong>Análisis antivirus profundo:</strong> Programación de escaneos semanales para detectar amenazas silenciosas.</li>
-        <li><strong>Actualizaciones del Sistema:</strong> Mantener al día los parches de seguridad de Windows/macOS y los controladores (drivers).</li>
-        <li><strong>Copias de Seguridad (Backups):</strong> Configurar respaldos automáticos en la nube o en discos externos usando la regla de respaldo 3-2-1.</li>
-      </ul>
-    </div>
-    <div style="text-align: center;">
-      <img src="fondo-seguridad-articulos-lineas-conectadas_23-2147628515.webp" alt="Seguridad y Backups" style="max-width: 320px; width: 100%; height: auto; border-radius: 10px; object-fit: cover;">
-    </div>
-  </div>
-</section>
-      <!-- Sección: Equipo Desarrollado Mantenimiento Preventivo -->
-<section class="section" id="equipo-desarrollado">
-  <h2>04. Equipo Desarrollado Mantenimiento Preventivo</h2>
-  <p>En esta sección mostramos los procedimientos prácticos realizados por el equipo durante el mantenimiento preventivo y limpieza profunda de los equipos.</p>
+        <section class="section" id="seguridad">
+            <h2>03. Seguridad y Backups</h2>
+            <p>El mantenimiento preventivo también implica proteger tu información contra virus, malware o fallas repentinas del disco duro que puedan causar pérdidas de datos irreparables.</p>
 
-  <div style="display: flex; flex-direction: column; gap: 2rem; margin-top: 1.5rem;">
-    
-    <!-- Aspecto 1: Soplado y Aspirado -->
-    <div class="grid" style="align-items: center;">
-      <div>
-        <h3>1. Soplado y Aspirado</h3>
-        <p>Uso de la sopladora de aire para retirar todo el polvo y suciedad acumulada en los ventiladores, fuente de poder y componentes internos.</p>
-      </div>
-      <div style="text-align: center;">
-        <img src="foto1.jpeg" alt="Soplado y aspirado" style="max-width: 320px; width: 100%; height: auto; border-radius: 10px; object-fit: cover;">
-      </div>
+            <div class="grid" style="align-items: center; margin-top: 1.5rem;">
+                <div>
+                    <h3 style="color: #2b6cb0; margin-bottom: 0.8rem;">Protocolo de Prevención:</h3>
+                    <ul style="line-height: 1.6; padding-left: 1.2rem;">
+                        <li><strong>Análisis antivirus profundo:</strong> Programación de escaneos semanales para detectar amenazas silenciosas.</li>
+                        <li><strong>Actualizaciones del Sistema:</strong> Mantener al día los parches de seguridad de Windows/macOS y los controladores (drivers).</li>
+                        <li><strong>Copias de Seguridad (Backups):</strong> Configurar respaldos automáticos en la nube o en discos externos usando la regla de respaldo 3-2-1.</li>
+                    </ul>
+                </div>
+                <div style="text-align: center;">
+                    <img src="fondo-seguridad-articulos-lineas-conectadas_23-2147628515.webp" alt="Seguridad y Backups" style="max-width: 320px; width: 100%; height: auto; border-radius: 10px; object-fit: cover;">
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="equipo-desarrollado">
+            <h2>04. Equipo Desarrollado Mantenimiento Preventivo</h2>
+            <p>En esta sección mostramos los procedimientos prácticos realizados por el equipo durante el mantenimiento preventivo y limpieza profunda de los equipos.</p>
+
+            <div style="display: flex; flex-direction: column; gap: 2rem; margin-top: 1.5rem;">
+                
+                <div class="grid" style="align-items: center;">
+                    <div>
+                        <h3>1. Soplado y Aspirado</h3>
+                        <p>Uso de la sopladora de aire para retirar todo el polvo y suciedad acumulada en los ventiladores, fuente de poder y componentes internos.</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <img src="foto1.jpeg" alt="Soplado y aspirado" style="max-width: 320px; width: 100%; height: auto; border-radius: 10px; object-fit: cover;">
+                    </div>
+                </div>
+
+                <div class="grid" style="align-items: center;">
+                    <div>
+                        <h3>2. Limpieza de Componentes</h3>
+                        <p>Limpieza detallada con brochas antiestáticas y aplicación de alcohol isopropílico / limpiador de contactos en las memorias RAM y placa madre.</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <img src="Limpiar-PC-Limpieza.jpg" alt="Limpieza de componentes" style="max-width: 320px; width: 100%; height: auto; border-radius: 10px; object-fit: cover;">
+                    </div>
+                </div>
+
+                <div class="grid" style="align-items: center;">
+                    <div>
+                        <h3>3. Ensamble y Verificación</h3>
+                        <p>Revisión del correcto ajuste de los cables, cambio de pasta térmica y pruebas de encendido del equipo.</p>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 2rem;">
+                    <h3 style="margin-bottom: 1rem;">Nuestro equipo en un mantenimiento</h3>
+                    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 500px; margin: 0 auto; border-radius: 10px;">
+                        <iframe 
+                          src="https://www.youtube.com/embed/vWrvenKRyHM" 
+                          title="Nuestro equipo en un mantenimiento" 
+                          frameborder="0" 
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                          allowfullscreen 
+                          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
     </div>
 
-    <!-- Aspecto 2: Limpieza de Componentes -->
-    <div class="grid" style="align-items: center;">
-      <div>
-        <h3>2. Limpieza de Componentes</h3>
-        <p>Limpieza detallada con brochas antiestáticas y aplicación de alcohol isopropílico / limpiador de contactos en las memorias RAM y placa madre.</p>
-      </div>
-      <div style="text-align: center;">
-        <img src="Limpiar-PC-Limpieza.jpg" alt="Limpieza de componentes" style="max-width: 320px; width: 100%; height: auto; border-radius: 10px; object-fit: cover;">
-      </div>
-    </div>
-
-    <!-- Aspecto 3: Ensamble y Verificación -->
-    <div class="grid" style="align-items: center;">
-      <div>
-        <h3>3. Ensamble y Verificación</h3>
-        <p>Revisión del correcto ajuste de los cables, cambio de pasta térmica y pruebas de encendido del equipo.</p>
-      </div>
-    </div>
-
-    <!-- Sección del Video -->
-    <div style="text-align: center; margin-top: 2rem;">
-      <h3 style="margin-bottom: 1rem;">Nuestro equipo en un mantenimiento</h3>
-      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 500px; margin: 0 auto; border-radius: 10px;">
-        <iframe 
-          src="https://www.youtube.com/embed/vWrvenKRyHM" 
-          title="Nuestro equipo en un mantenimiento" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen 
-          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-        </iframe>
-      </div>
-    </div>
-
-  </div>
-</section>
     <footer>
         <p>&copy; 2026 PC Clean. Creado con fines educativos estilo Wix.</p>
         <p>Optimiza, protege y acelera tu equipo.</p>
@@ -440,3 +420,6 @@ body {
 
 </body>
 </html>
+
+
+    
